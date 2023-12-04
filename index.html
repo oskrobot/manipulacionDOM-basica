@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulación del DOM básica - Curso práctico de JavaScript</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<style>
+    .container-input {
+        margin-top: 30px;
+        border-top: 1px solid red;                
+    }
+
+    .bloque {
+        width: 100px;
+        height: 100px;
+        background-color: blue;        
+    }
+
+    .bloque p {
+        text-align: center; 
+    }
+</style>
+
+<body>
+    <form id="form">
+        <h1>Manipulación del DOM básica</h1>
+        <input id="calculo1" placeholder="Escribe algo aquí">
+        <input id="calculo2" placeholder="Escribe algo aquí">
+        <button type="button" id="btnCalcular">Calcular</button>
+        <p id="result"></p>
+    </form>
+
+    <div class="container">
+        <h2>Contador</h2>
+        <p id="parrafo-contador">0</p>
+        <button id="boton-contador" class="btn btn-primary">Contador</button>
+    </div>
+
+    <div class="container-input">
+        <h2>Input</h2>
+        <form>
+            <input type="text" class="form-control">
+            <p class="form-p"></p>
+        </form>
+    </div>
+
+    <div class="container">
+        <div class="container bloque">
+            <p>Bloque</p>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
